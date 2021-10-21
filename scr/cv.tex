@@ -61,9 +61,9 @@
 % Technologies
 \technologies{
 	{materialteal!35/Java/Gson, Jackson, Jetbrains Annotations, JDA\vspace{1mm}\\
-		JUnit, Logback, SLF4J, Log4j},
+		Caffeine, JUnit, Logback, SLF4J, Log4j},
 	{materialteal!35/C\#/WPF, XUnit, Moq, NewtonsoftJson, Jetbrains Annotations},
-	{materialteal!35/Spring/Boot, Framework, Reactor},
+	{materialteal!35/Spring/Web, WebFlux, WebClient, Boot, Framework, Reactor},
 	{materialteal!35/Frontend/TailwindCSS},
 	{materialteal!35/Databases/MongoDB},
 	{materialteal!35/Networking/REST, JSON},
@@ -185,7 +185,35 @@
 %	 Projects
 %----------------------------------------------------------------------------------------
 
-\section{Projects (2 of 5)}
+\section{Projects (1 of 5)}
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+    		{October 2021 -}
+		{Present}
+        		{Java-OsuApiWrapper}
+        		{\href{https://github.com/Tais993/Java-OsuApiV1/}{GitHub/Java-OsuApiV1}}
+        		{Java 17, Gradle, Spring Boot Web, WebClient, Reactor Spring, IntelliJ Annotations, Caffeine, Jackson}
+        		{
+        		Wrapper around the osu api, revamp of one of my older projects.
+        		This project follows SOLID principles, makes usage of a lot of interfaces.
+        		Internal things can only be used when casting your objects to their Impl variant.
+        		Makes usage of Spring's WebClient and returns Reactive Streams
+        		\begin{itemize}
+        		    \item Spring, WebClient
+        		    \item Reactor, Reactive Streams
+        		    \item Caching
+                \end{itemize}}\\
+\end{twenty}
+
+\newpage
+
+\makesidebarSecond % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 Projects
+%----------------------------------------------------------------------------------------
+
+\section{Projects (4 of 5)}
 \begin{twenty} % Environment for a list with descriptions
 	\twentyitem
     		{Aug 2021 -}
@@ -208,25 +236,6 @@
         			\item Includes calculator
         			\item Includes currency converter
         		\end{itemize}}\\
-\end{twenty}
-
-\newpage
-
-\makesidebarSecond % Print the sidebar
-
-%----------------------------------------------------------------------------------------
-%	 Projects
-%----------------------------------------------------------------------------------------
-
-\section{Projects (3 of 5)}
-\begin{twenty} % Environment for a list with descriptions
-	\twentyitem
-    		{Feb 2021 -}
-		{Apr 2021}
-        		{Osu-apiwrapper}
-        		{\href{https://github.com/Tais993/Legacy-OsuApiWrapper}{GitHub/Legacy-OsuApiWrapper}}
-        		{Java 15, Gradle, Gson, HttpClient, Rest}
-        		{Wrapper around the osu api, currently being reworked.}\\
 	\twentyitem
     		{Sep 2020 -}
 		{Dec 2020}
