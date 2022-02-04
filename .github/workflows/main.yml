@@ -11,8 +11,10 @@ jobs:
         with:
           working_directory: scr
           root_file: cv_english.tex
+          latexmk_use_lualatex: true
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
           working_directory: scr
           root_file: cv_nederlands.tex
+          latexmk_use_lualatex: true
