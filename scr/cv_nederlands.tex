@@ -1,55 +1,47 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Twenty Seconds Resume/CV
-% LaTeX Template
-% Version 1.0 (14/7/16)
-%
-% Original author:
-% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by
-% Vel (vel@LaTeXTemplates.com), Harsh (harsh.gadgil@gmail.com),
-% ZabuzaW (zabuza.dev@gmail.com) and Tais993
-%
+% Dutch version
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
-
-\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+\documentclass[letterpaper]{twentysecondcv_nederlands}
 
 %----------------------------------------------------------------------------------------
-%	 PERSONAL INFORMATION
+% PERSONAL INFORMATION
 %----------------------------------------------------------------------------------------
-% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
 
-\cvname{Tijs Beek} % Your name
-\cvjobtitle{Software Developer, 20} % Job
-\cvavatar{avatar.jpg} % Avatar
-% title/career
+\cvname{Tijs Beek}
+\cvjobtitle{Software Developer, 21}
+\cvavatar{avatar.jpg}
 
-\cvaddress{Uden, Nederland} % Address
-\cvlinkedin{/in/tijs-beek-ab038217b/} % LinkedIn site
-\cvgithub{Tais993} % Github site
-\cvgithubRepos{27} % GitHub amount of repositories
-\cvgithubForks{2} % GitHub amount of forks
-\cvgithubStars{7} % GitHub amount of stars
-\cvsite{tais993.github.io/} % Personal website
-\cvnumberphone{} % Phone number
-\cvstackoverflow{} % StackOverflow user name
-\cvstackoverflowId{} % StackOverflow user id
-\cvstackoverflowRep{} % StackOverflow user reputation
-\cvstackoverflowGold{} % StackOverflow amount of gold badges
-\cvstackoverflowSilver{} % StackOverflow amount of silver badges
-\cvstackoverflowBronze{} % StackOverflow amount of bronze badges
-\cvmail{} % Email address
+\cvaddress{Uden, Nederland}
+\cvlinkedin{/in/tijs-beek-ab038217b/}
+\cvgithub{Tais993}
+\cvgithubRepos{60}
+\cvgithubForks{12}
+\cvgithubStars{7}
+\cvsite{tais993.github.io/Async-programming/}
 
+\cvnumberphone{}
+\cvstackoverflow{}
+\cvstackoverflowId{}
+\cvstackoverflowRep{}
+\cvstackoverflowGold{}
+\cvstackoverflowSilver{}
+\cvstackoverflowBronze{}
+\cvmail{tijs@familiebeek.eu}
 
-% Programming skill bars
+%----------------------------------------------------------------------------------------
+% FIRST SIDEBAR
+%----------------------------------------------------------------------------------------
+
+\newcommand{\skills}{}
+
 \programming{
-        {HTML $\textbullet$ CSS $\textbullet$ JS\slash TS $\textbullet$ PHP / 1.5},
-        {C\# $\textbullet$ Kotlin / 3},
-        {Java / 6}}
+    HTML $\textbullet$ CSS $\textbullet$ JS\slash TS / 1.5,
+    C\# $\textbullet$ Kotlin / 4,
+    Java / 6
+}
 
-% Language overview bubbles
 \newcommand\languages{
     ~
     \smartdiagram[bubble diagram]{
@@ -58,272 +50,292 @@
     }
 }
 
-% Technologies
+%----------------------------------------------------------------------------------------
+% SECOND SIDEBAR
+%----------------------------------------------------------------------------------------
+
 \technologies{
-        {materialteal!35/Java/Gson, Jackson, Jetbrains Annotations\vspace{1mm}\\
-    JDA, Caffeine, JUnit, Logback, SLF4J, \vspace{1mm}\\
-    Log4j},
-        {materialteal!35/C\#/WPF, XUnit, Moq, NewtonsoftJson, \vspace{1mm}\\
-    Jetbrains Annotations},
-        {materialteal!35/Spring/Boot, Framework, Web, WebClient, \vspace{1mm}\\
-    Reactor, JPA},
-        {materialteal!35/Frontend/TailwindCSS, ReactJS},
-        {materialteal!35/Databases/MongoDB, PostgreSQL},
-        {materialteal!35/Networking/REST, JSON},
-        {materialamber!20/IDEs/IntelliJ, Rider, PhpStorm, VSC, \vspace{1mm}\\
-    Visual Studio},
-        {materialamber!20/Versioning/GitHub, GitLab, GitKraken, BitBucket \vspace{1mm}\\
-    Git},
-        {materialamber!20/Build Management/Gradle, Maven, Resharper},
-        {materialamber!20/Organization/GitHub, Space, Atlassian},
-        {materialamber!20/Communication/Slack, Discord, Skype, MS Teams, \vspace{1mm}\\
-    MS Outlook},
-        {materialamber!20/Documentation/Markdown, Asciidoc, Javadoc},
-        {materialamber!20/CI\/CD/Bamboo, GitHub actions},
-        {materialamber!20/Issue Tracking/Jira, GitHub Issues, Space, Trello}}
+    materialteal!35/Java/{Jackson, Caffeine, SLF4J, Logback, Log4j},
+    materialteal!35/C\#/{.NET 10, ASP.NET Core, WPF, Razor Pages, Npgsql},
+    materialteal!35/Spring/{Spring Boot, Spring Web\slash MVC, Reactor, Spring REST Docs},
+    materialteal!35/Databases/{PostgreSQL, MongoDB, SQL, JPA, Hibernate, Spring Data JPA, Flyway},
+    materialteal!35/Testing/{JUnit, NUnit, xUnit, Mockito, Moq, Testcontainers, MockMvc},
+    materialteal!35/Code Quality/{SonarQube, JaCoCo, Codecov},
+    materialteal!35/Architecture \& APIs/{REST},
+    materialamber!20/DevOps \& CI\slash CD/{Docker, Docker Compose, GitHub Actions, Bamboo},
+    materialamber!20/Build Management/{Gradle, Maven, MSBuild, NuGet},
+    materialamber!20/Version Control/{Git, GitHub, GitLab, Bitbucket},
+    materialamber!20/IDEs \& Tools/{IntelliJ IDEA, Rider, PhpStorm, Visual Studio, ReSharper},
+    materialamber!20/Documentation/{Markdown, AsciiDoc, Javadoc, C4 Model},
+    materialamber!20/Project Management/{Jira, GitHub Issues, Trello},
+    materialamber!20/Communication/{Slack, MS Teams, MS Outlook}
+}
 
-
+%----------------------------------------------------------------------------------------
+% DOCUMENT
 %----------------------------------------------------------------------------------------
 
 \begin{document}
 
-    \makesidebarFirst % Print the sidebar
+\makesidebarFirst
 
 %----------------------------------------------------------------------------------------
-%	 Profile
+% PROFILE
 %----------------------------------------------------------------------------------------
 
+\section{Profiel}
 
-    \section{Profiel}
+Enthousiaste Associate degree ICT-student met ruim zeven jaar
+programmeerervaring en een sterke interesse in Java en backendontwikkeling.
+Ervaring met softwarearchitectuur, geautomatiseerd testen en CI/CD,
+opgedaan tijdens zowel persoonlijke projecten als open-source samenwerking.
+Daarnaast ervaring met C\# en .NET.
 
-    \begin{itemize}
-        \item \textbf{Zes jaar} programmeer ervaring
-        \item \textbf{Expert in Java}, kennis van C\#, Kotlin en Fullstack kennis
-        \item \textbf{Enthousiast} in programmeren
-    \end{itemize}
-
-    \vspace{6mm}
-
+\vspace{6mm}
 
 %----------------------------------------------------------------------------------------
-%	 EDUCATION
+% EDUCATION
 %----------------------------------------------------------------------------------------
 
+\section{Onderwijs}
 
-    \section{Onderwijs}
+\begin{twenty}
 
-    \begin{twenty} % Environment for a list with descriptions
-        \twentyitem
-        {Sept 2023 -}
-        {Heden}
-        {Bachelor ICT}
-        {\href{https://www.fontys.nl/}{Fontys ICT, Eindhoven}}
-        {}
-        {
-            Al enkele tijd bezig met HBO Bachelor IT!
-        }\\
-        \twentyitem
-        {Sept 2021 -}
-        {Jun 2023}
-        {Software developer (bol) niveau 4}
-        {\href{https://www.summacollege.nl/}{Summa College, Eindhoven}}
-        {}
-        {
-            Door middel van begeleiding ben ik naar een differentiatie klas kunnen gaan. Dit gaf me de mogelijkheid om de opleiding versneld binnen anderhalf jaar te halen.
-        }
-        %\twentyitem{<dates>}{<title>}{<organization>}{<location>}{<description>}
-    \end{twenty}
+    \twentyitem
+    {Sept 2023 -}
+    {Heden}
+    {Associate degree ICT}
+    {\href{https://www.fontys.nl/}{Fontys ICT, Eindhoven}}
+    {}
+    {
+        Associate degree-opleiding ICT, met een focus op
+        softwareontwikkeling en het toepassen van kennis
+        in praktijkgerichte projecten.
+    }\\
 
-%----------------------------------------------------------------------------------------
-%	 Hobbies
-%----------------------------------------------------------------------------------------
+    \twentyitem
+    {Sept 2021 -}
+    {Jun 2023}
+    {Software Developer (bol) niveau 4}
+    {\href{https://www.summacollege.nl/}{Summa College, Eindhoven}}
+    {}
+    {
+        De opleiding versneld afgerond in anderhalf jaar
+        via een differentiatieklas.
+    }
 
-
-    \section{Hobby's}
-
-    \begin{twenty} % Environment for a list with descriptions
-        \twentyitem
-        {2023 -}
-        {Heden}
-        {Fotografie \& Videografie}
-        {}
-        {}
-        {
-            In 2023 heb ik een doorbraak gehad, ik ben actief gaan fotograferen. Ondertussen regelmatig vindbaar bij o.a De Pul.\\
-        Videografie is ook gestart sinds 2024, op dit moment werk ik aan een documentaire serie over de geschiedenis van Scouting Uotha.
-        }\\
-        \twentyitem
-        {Feb 2019 -}
-        {Heden}
-        {Programmeren}
-        {\href{https://tais993.github.io/}{GitHub Pages}}
-        {}
-        {
-            Al 6 jaar geleden begonnen met actief programmeren, pas in Augustus van 2021 begonnen met Software Development op school.
-        }\\
-        \twentyitem
-        {2012 -}
-        {Heden}
-        {Scouting Uotha}
-        {\href{https://www.uotha.nl/}{Scouting Uotha}}
-        {}
-        { Ben er jaren geleden mee begonnen, ondertussen doorgegroeid al 2 jaar actief als leiding van een welpen groep (7-11 jaar).}\\
-    \end{twenty}
-
-    \vspace{6mm}
-
+\end{twenty}
 
 %----------------------------------------------------------------------------------------
-%	 Experience
+% HOBBIES
 %----------------------------------------------------------------------------------------
 
+\section{Hobby's}
 
-    \section{Ervaringen}
-    \begin{twenty} % Environment for a list with descriptions
-        \twentyitem
-        {Dec 2023 -}
-        {Heden}
-        {Fotograaf bij De Pul}
-        {\href{https://www.livepul.com/}{De Pul, Uden}}
-        {}
-        {
-            Begonnen als fotograaf, en nog steeds actief fotograaf.
-        }                   \\
-        \twentyitem
-        {Feb 2021 -}
-        {Heden}
-        {Bezorger bij de Kwalitaria}
-        {\href{https://kwalitaria.nl/uden-zuid/uden-zuid/}{Kwalitaria, Uden-Zuid}}
-        {}
-        {Voedselleveringen} \\
-        \twentyitem
-        {Feb 2022 -}
-        {Jun 2022}
-        {Stage bij Vanderlande}
-        {\href{https://www.vanderlande.com/}{Vanderlandestraat, Veghel}}
-        {}
-        {
-            Het is mijn taak geweest tijdens mijn stage om te werken aan een CI/CD gerelateerde (interne) tool die in Java is geschreven.
-        }                   \\
-        \twentyitem
-        {Mar 2018 -}
-        {Apr 2021}
-        {Leerlingenraad Udenscollege}
-        {\href{https://www.udenscollege.nl/vmbo/startpagina-vmbo/}{Udenscollege VMBO}}
-        {}
-        {
-            Gedurende 3 jaar ben ik lid geweest van de leerlingenraad, waaronder 1+ jaar als voorzitter.
-        }
-        %\twentyitem{<dates>}{<title>}{<location>}{<description>}
-    \end{twenty}
+\begin{twenty}
 
-    \vspace{6mm}
+    \twentyitem
+    {2023 -}
+    {Heden}
+    {Fotografie \& Videografie}
+    {\href{https://www.instagram.com/tijsbeek_nl/}{Instagram/tijsbeek\_nl}}
+    {}
+    {
+        Sinds 2023 actief als fotograaf, onder andere bij
+        poppodium De Pul in Uden.
+        Daarnaast houd ik mij bezig met videografie en werk
+        ik aan een documentaireserie over de geschiedenis
+        van Scouting Uotha.
+    }\\
 
-    \newpage
+    \twentyitem
+    {Feb 2019 -}
+    {Heden}
+    {Programmeren}
+    {\href{https://github.com/Tais993}{GitHub/Tais993}}
+    {}
+    {
+        Sinds februari 2019 actief bezig met programmeren,
+        inmiddels ruim zeven jaar.
+        Wat begon als hobby is uitgegroeid tot mijn
+        belangrijkste interesse en toekomstige beroep.
+    }\\
 
-    \makesidebarSecond % Print the sidebar
+    \twentyitem
+    {2012 -}
+    {Heden}
+    {Scouting Uotha}
+    {\href{https://www.uotha.nl/}{Scouting Uotha}}
+    {}
+    {
+        Al sinds 2012 betrokken bij Scouting Uotha.
+        Inmiddels vier jaar actief als leiding bij de
+        Welpen (7--11 jaar), waarbij ik activiteiten
+        organiseer en begeleid.
+    }
 
+\end{twenty}
+
+\vspace{6mm}
 
 %----------------------------------------------------------------------------------------
-%	 Projects
+% WORK EXPERIENCE
 %----------------------------------------------------------------------------------------
 
+\section{Ervaringen}
 
-    \section{Projecten}
+\begin{twenty}
 
+    \twentyitem
+    {Jul 2025 -}
+    {Heden}
+    {Attractiemedewerker}
+    {\href{https://www.thechocolatefactory-noordkade.com/}{The Chocolate Factory, Noordkade}}
+    {}
+    {
+        Parttime werkzaam als attractiemedewerker.
+    }\\
 
-    \begin{twenty} % Environment for a list with descriptions
-        \twentyitem
-        {Maart 2022 -}
-        {Aug 2023}
-        {Hayame}
-        {\href{https://github.com/Tais993/Hayame}{GitHub/Hayame}}
-        {Java 17, Gradle, MariaDB, Flyway, HikariCP, SQL, Prometheus}
-        {
-            Nog een basic Discord bot. Maar dit keer met lokalisatie! Het implementeren hiervan was makkelijker dan ik had verwacht.
-            De bot heeft ook statistieken geïmplementeerd door middel van Prometheus, en dit is mijn eerste SQL project (MariaDB + HikariCP)
-        }                                                                                                   \\
+    \twentyitem
+    {Apr 2023 -}
+    {Aug 2023}
+    {Full-stack Developer}
+    {\href{https://www.sidekix.nl/}{Sidekix}}
+    {}
+    {
+        Vijf maanden werkzaam geweest als full-stack
+        softwareontwikkelaar, met ervaring in het
+        ontwikkelen van applicaties.
+    }\\
 
-        \twentyitem
-        {Nov 2021 -}
-        {Dec 2021}
-        {HTML-Validator}
-        {\href{https://github.com/Tais993/HTML-Validator/}{GitHub/HTML-Validator}}
-        {Java 17, Gradle}
-        {
-            Dit project is niet afgerond, het is een groot project waar ik weinig van leerde.\\
+    \twentyitem
+    {Feb 2022 -}
+    {Jun 2022}
+    {Software Developer (stage)}
+    {\href{https://www.vanderlande.com/}{Vanderlande, Veghel}}
+    {Java, CI/CD, DevOps}
+    {
+        Tijdens mijn stage gewerkt aan een interne
+        Java-applicatie voor het ondersteunen van het
+        software-releaseproces, gericht op CI/CD en DevOps.
+    }\\
 
-        Het idee van deze library is om HTML te valideren, waarna het waarschuwingen en fouten teruggeeft.\\
-        Ik wou erna een website bij maken.}                                                                 \\
+    \twentyitem
+    {Jan 2021 -}
+    {Jul 2025}
+    {Bezorger}
+    {\href{https://kwalitaria.nl/}{Kwalitaria, Uden}}
+    {}
+    {
+        Parttime werkzaam geweest als bezorger.
+    }
 
-        \twentyitem
-        {Okt 2021 -}
-        {Heden}
-        {Java-OsuApiWrapper}
-        {\href{https://github.com/Tais993/Java-OsuApiV1/}{GitHub/Java-OsuApiV1}}
-        {Java 17, Gradle, Spring Boot Web, WebClient, Reactor Spring, Caffeine, IntelliJ Annotations, Jackson}
-        {
-            Dit project is still WIP
+\end{twenty}
 
-            Een wrapper voor de osu!api, dit is een REST API voor osu! de game                                  \\
-        Rework van een van mijn oudere projecten.
+\vspace{6mm}
 
-        Dit project heeft me goed geholpen met het designen van libraries en het maken van goede documentatie.
-            \begin{itemize}
-                \item Zeer modificeerbaar
-                \item Duidelijke documentatie
-                \item Reactive
-            \end{itemize}
-        }\\
+\newpage
 
-        \twentyitem
-        {Aug 2021 -}
-        {Heden}
-        {TJ-Bot}
-        {\href{https://github.com/Together-Java/TJ-Bot/}{(Klik voor meer info) GitHub/TJ-Bot}}
-        {Java 17, Gradle, Jetbrains Annotations, JDA, JUnit, SLF4J, Logback, SQLite, Sonarcloud, Spotless}
-        {Discord bot voor de zogenaamde "Together Java" Discord server, de bot wordt onderhouden door de community. \\
-        Dit heeft mijn Git en samenwerkings vaardigheden versterkt in grote mate                                    \\
-        Ik ben steeds een van de actiefste deelnemers van het project.
-        }\\
+\makesidebarSecond
 
-        \twentyitem
-        {Sep 2021 -}
-        {Oct 2021}
-        {VeelPlezier}
-        {\href{https://github.com/Tais993/VeelPlezier}{GitHub/VeelPlezier}}
-        {C\#, .NET framework 7.2, WPF, JetBrains Annotations, NewtonsoftJson, XUnit, Moq}
-        {
-            Dit was een project gekregen van school.
+%----------------------------------------------------------------------------------------
+% PROJECTS
+%----------------------------------------------------------------------------------------
 
-            Digitale kassa, eerste C\# project en eerste project met unit testing, \\
+\section{Projecten}
 
-        Ik heb vooral geleerd hoe C\# werkt, unit testing zat al in mijn hoofd, heb het toegepast in dit project.
-            \begin{itemize}
-                \item Responsieve GUI
-                \item Lokalisatie
-                \item Inclusief rekenmachine
-                \item Inclusief valuta omzetter
-            \end{itemize}
-        }\\
+\begin{twenty}
 
-        \twentyitem
-        {June 2020 -}
-        {Sep 2021}
-        {TorchCraftExcelMod}
-        {\href{https://github.com/Tais993/TorchCraftExcelMod}{GitHub/TorchCraftExcelMod}}
-        {Java, Minecraft Forge}
-        {
-            Minecraft mod voor prison spelers.                                                                          \\
-            Hoofd functionaliteit is het berekenen hoeveel de items in je inventory waard zijn in de servers munteenheid
-            \begin{itemize}
-                \item Meerdere instellingen
-                \item Exporteren naar csv-bestanden
-                \item Het laden van item data kan via configs
-            \end{itemize}
-        }\\
-    \end{twenty}
-\end{document}
-\begin{document}
+    \twentyitem
+    {Sep 2026 -}
+    {Heden}
+    {PHP -- Personal Home Page}
+    {\href{https://github.com/Tais993/PHP}{GitHub/PHP}}
+    {Java, Spring Boot, PostgreSQL, Gradle, Docker, GitHub Actions, JUnit, Testcontainers}
+    {
+        Voor het organiseren van mijn niet-technische TODO's was ik altijd
+        op zoek naar een fijne applicatie. Toen ik voor school een project
+        moest bedenken, besloot ik daarom mijn eigen startpagina te
+        ontwikkelen, waarin ik ook mijn TODO's kan bijhouden.
+
+        De applicatie is gebouwd met Java en Spring Boot, volgens de
+        principes van Clean Architecture. De verschillende lagen zijn
+        onderverdeeld in afzonderlijke Gradle-modules. Daarnaast heb ik
+        een uitgebreide CI/CD-configuratie opgezet, met unit- en
+        integratietests, Codecov, SonarQube en het automatisch publiceren
+        van Docker-images.
+
+        Dit project is nog lang niet afgerond, maar het herinnert me er
+        telkens aan waarom ik zo graag met Java werk.
+    }\\
+
+    \twentyitem
+    {Apr 2026 -}
+    {Heden}
+    {Picture Project Maintenance Tool}
+    {\href{https://github.com/Tais993/Photography}{GitHub/Photography}}
+    {C\#, .NET, ASP.NET Core, Razor Pages, PostgreSQL, NUnit, Moq}
+    {
+        Als fotograaf ben ik regelmatig veel tijd kwijt aan het
+        organiseren en selecteren van foto's. Daarom ben ik begonnen
+        met het ontwikkelen van een tool om dit proces te vereenvoudigen
+        en te verbeteren.
+
+        Door gebruik te maken van een gelaagde architectuur heb ik een
+        afzonderlijke CLI en website kunnen ontwikkelen die dezelfde
+        applicatielogica gebruiken.
+
+        De tool herkent fotografieprojecten en kan afbeeldingen zoeken,
+        selecteren en kopiëren. Daarnaast versnelt de tool het importeren
+        van foto's vanaf mijn camera aanzienlijk.
+
+        Het project is nog volop in ontwikkeling en ik ben van plan het
+        de komende maanden verder uit te breiden.
+    }\\
+
+    \twentyitem
+    {2021 -}
+    {2023}
+    {Together Java -- TJ-Bot}
+    {\href{https://github.com/Together-Java/TJ-Bot}{GitHub/TJ-Bot}}
+    {Java, Gradle, JDA, JUnit, Git, GitHub}
+    {
+        TJ-Bot is een open-source Discord-bot voor de Together
+        Java-community. Het project is onder andere opgezet om
+        beginnende programmeurs te helpen ervaring op te doen met
+        samenwerken en Git.
+
+        Ik heb ongeveer twee jaar actief bijgedragen aan het project,
+        waarbij ik tientallen pull requests heb gemerged en meer dan
+        honderd pull requests heb gereviewd.
+
+        Dit project heeft mijn kennis van Git, code reviews en het
+        samenwerken met andere ontwikkelaars enorm verbeterd.
+    }\\
+
+    \twentyitem
+    {Mrt 2022 -}
+    {Aug 2023}
+    {Hayame}
+    {\href{https://github.com/Tais993/Hayame}{GitHub/Hayame}}
+    {Java, Gradle, MariaDB, HikariCP, Flyway, Prometheus, Grafana}
+    {
+        Hayame is een Discord-bot die ik zelf heb ontwikkeld in Java.
+        Het project bestaat uit meerdere Gradle-modules en maakt gebruik
+        van MariaDB en HikariCP, gecombineerd met Flyway voor
+        databasemigraties.
+
+        Daarnaast heb ik Prometheus en Grafana geïntegreerd om
+        statistieken van de bot bij te houden. Bij het opstarten werden
+        de benodigde dashboards automatisch geconfigureerd, mits de
+        software geïnstalleerd was.
+
+        Door dit project heb ik veel ervaring opgedaan met databasebeheer
+        en het monitoren van verschillende systemen.
+    }
+
+\end{twenty}
+
+\vspace{-10mm}
 
 \end{document}

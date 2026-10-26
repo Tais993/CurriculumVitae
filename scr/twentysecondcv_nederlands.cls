@@ -218,12 +218,12 @@
 	%------------------------------------------------
 
 	\vspace{5mm}
-	\begin{figure}[h!]
-		\centering
-		\setlength{\fboxsep}{0pt}
-		\setlength{\fboxrule}{1pt}
-		\fbox{\includegraphics[width=3.5cm, height=3.5cm]{\cvavatar}}
-	\end{figure}
+    \begin{figure}[h!]
+    \centering
+    \setlength{\fboxsep}{0pt}
+    \setlength{\fboxrule}{1pt}
+    \fbox{\includegraphics[width=3.5cm,height=3.5cm,keepaspectratio]{\cvavatar}}
+    \end{figure}
 
     %------------------------------------------------
     \vspace{5mm}
